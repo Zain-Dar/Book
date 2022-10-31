@@ -8,3 +8,20 @@
     <h1 class="display-4">Book Shop</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<div class="row">
+    @foreach (var book in Model.Books)
+    
+
+    
+    {
+    <div id="bookContainer" class="col-lg-4 col-md-6 col-sm-12">
+        <img id="bookImage" src="@book.book_image" alt="@book.book_name" />
+        <span id="booktitle">@book.book_name</span>
+        <span id="bookPrice">Coming Soon</span>
+        <span> <input id="bookQuantity" type="number" name="Quantity" value="" placeholder="0" /> </span>
+        <span id="cartButton"><button>Add to Cart</button></span>
+
+    </div>
+    }
+</div>

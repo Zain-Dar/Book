@@ -1,5 +1,39 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+#bookContainer{
+    margin-bottom:70px;
+}
+
+
+#bookImage {
+    width: 90%;
+    height: 90%;
+    display:block;
+    margin:0 auto;
+}
+#booktitle {
+    display: block;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font: 20px;
+}
+#bookPrice {
+    display: block;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font: 16px;
+    color:aqua;
+}
+#bookQuantity{
+    width:50%;
+    display:inline;
+    text-align:center;
+}
+#cartButton {
+    width: 50%;
+    display: inline;
+}
+
 
 a.navbar-brand {
   white-space: normal;
