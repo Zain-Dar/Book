@@ -4,24 +4,15 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Book Shop</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<form action="/FormHandler" method="get">
+    <label for="ID">Enter Your ID:</label>
+    <input id="ID " type="number" name="ID" value="" required />
 
-<div class="row">
-    @foreach (var book in Model.Books)
-    
+    <label for="Name">Enter Your Name:</label>
+    <input id="Name" type="text" name="Name" value="" required />
 
-    
-    {
-    <div id="bookContainer" class="col-lg-4 col-md-6 col-sm-12">
-        <img id="bookImage" src="@book.book_image" alt="@book.book_name" />
-        <span id="booktitle">@book.book_name</span>
-        <span id="bookPrice">Coming Soon</span>
-        <span> <input id="bookQuantity" type="number" name="Quantity" value="" placeholder="0" /> </span>
-        <span id="cartButton"><button>Add to Cart</button></span>
+    <label for="Image">Enter image Url:</label>
+    <input id="Image" type="text" name="Image" value="" required />
 
-    </div>
-    }
-</div>
+    <input type="Submit" name="Submit" value="Submit" />
+</form>
